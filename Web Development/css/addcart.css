@@ -1,0 +1,84 @@
+.warning
+{
+    color: red;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.label-default
+{
+    font-size: 16px;
+}
+
+.table-responsive
+{
+    align-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+th
+{
+    text-align: center;
+}
+
+.align
+{
+    margin-left: 38%;
+}
+
+.well, .well-sm
+{
+    box-shadow: 0 0 30px #00007A;
+}
+
+.label-default, .warning
+{
+    text-align: justify;
+    font-family: Georgia;
+}
+
+.label-default
+{
+    background-color: white;
+    color: black;
+}
+
+@font-face
+{
+    font-family: curve;
+    src: url("../fonts/SFSportsNight.ttf");
+}
+h4
+{
+    color: midnightblue;
+    font-family: Georgia;
+}
+h3
+{
+    font-family: curve;
+    text-align: center;
+    color: midnightblue;
+}
+a.link
+{
+    text-decoration: none;
+    float:none;
+    color: midnightblue;
+}
+.table
+{
+    font-family: Georgia;
+    font-size: 16px;
+}
+a
+{
+    float: right;
+    color: midnightblue;
+}
+h3.text
+{
+    font-family: Georgia;
+    float: left;
+    text-shadow: 2px 2px #99CCFF;
+}

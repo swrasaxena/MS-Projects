@@ -1,0 +1,71 @@
+﻿<%@ Master Language="C#" %>
+
+<!DOCTYPE html>
+
+<script runat="server">
+
+</script>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Football Mania</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css" />
+    <link href="../css/proj-master.css" rel="stylesheet" type="text/css" />
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <meta name="google-translate-customization" content="ba91178f28b1ee15-9ee87cec5aead5eb-gd4933ef5d9376705-1f"/>
+
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <link rel="icon" type="image/ico" href="http://images.wikia.com/packers/images/archive/e/e9/20101226155930!Football_icon.png"/>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <div class="navbar navbar-inverse">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="name navbar-brand" href="#">FOOTBALL MANIA</a>
+            </div>
+            <div class="navbar-collapse navbar-responsive-collapse collapse" style="height: 1px;">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="<%= Page.ResolveUrl("~/project/pages/HomePage.aspx")%>">Home</a></li>
+                    <li><a href="<%= Page.ResolveUrl("~/project/pages/Teams.aspx")%>">Teams</a></li>
+                    <li><a href="<%= Page.ResolveUrl("~/project/pages/News.aspx")%>">Football Now</a></li>
+                    <li><a href="<%= Page.ResolveUrl("~/project/pages/Videos.aspx")%>">Videos</a></li>
+                    <li><a class="login" href="<%= Page.ResolveUrl("~/Login.aspx")%>">Login</a></li>
+                    <li><a href="<%= Page.ResolveUrl("~/project/pages/feedback.aspx")%>">Feedback</a></li>
+                    <li><a href="<%= Page.ResolveUrl("~/project/pages/Contact.aspx")%>">Contact Us</a></li>
+                    <li><button type="button" class="btn btn-primary" id="google_translate_element"></button></li>
+                </ul>
+            </div>
+        </div>    
+        <br />
+        <asp:ContentPlaceHolder id="body" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        <div class="footer">
+            Copyright &copy; Swara Saxena, 2014. All Rights Reserved.
+        </div>
+    </div>
+        <script src="../javascript/bootstrap.min.js"></script>
+    </form>
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank" class="showPaypal">
+            <input type="hidden" name="cmd" value="_s-xclick" />
+            <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+               " />
+            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" name="submit" alt="PayPal - The safer, easier way to pay online!" />
+            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+        </form>
+    
+</body>
+</html>

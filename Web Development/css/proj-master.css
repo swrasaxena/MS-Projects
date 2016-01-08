@@ -1,0 +1,31 @@
+@font-face
+{
+    font-family: stylish-curve;
+    src: url("../fonts/SFSportsNight.ttf");
+}
+html, body
+{
+    height: 100%;
+}
+body
+{
+    background-color: floralwhite;
+}
+
+.name
+{
+    color: white;
+    font-family: stylish-curve;
+}
+
+.showPaypal
+{
+    display:none;
+}
+
+.footer
+{
+    margin-left: 37%;
+    font-family: Georgia;
+    color: black;
+}

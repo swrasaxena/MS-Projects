@@ -1,0 +1,33 @@
+body
+{
+color: white;
+background-image: url('light-violet.jpg');
+font-family: 'Source Sans Pro', sans-serif;
+font-size: 12pt;
+font-weight: 300;
+text-align: center;
+}
+#alignment
+{
+  position: absolute;
+  margin-left:40%;
+}
+
+h3
+{
+color: white;
+font-family: 'Source Sans Pro', sans-serif;
+text-shadow: 5px 5px 5px #FFFF00;
+}
+#pos
+{
+position: absolute;
+top:0%;
+right:3%;
+color: white;
+}
+a
+{
+color: white;
+}
+

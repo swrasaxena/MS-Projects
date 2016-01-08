@@ -1,0 +1,27 @@
+.col-xs-6
+{
+    padding-left:0;
+    padding-right:0;
+}
+#myVideo
+{
+    margin: 0 auto;
+}
+.modal-body
+{
+    padding: 10px;
+}
+h4
+{
+    font-family: Georgia;
+    color: midnightblue;
+}
+.panel-info.panel-body
+{
+    font-family: Georgia;
+    color: black;
+}
+a
+{
+    color: green;
+}

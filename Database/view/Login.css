@@ -1,0 +1,27 @@
+body
+{
+margin: 0px;
+padding: 0px;
+background-image: url('rarity.jpg');
+font-family: 'Source Sans Pro', sans-serif;
+font-size: 12pt;
+font-weight: 300;
+color: white;
+}
+h2
+{
+color: white;
+text-align: center;
+font-family: 'Source Sans Pro', sans-serif;
+text-shadow: 5px 5px 5px #FF00FF;
+}
+#outer
+{
+outline-style: outset;
+outline-color: white;
+outline-width: thick;
+}
+a
+{
+color: white;
+}

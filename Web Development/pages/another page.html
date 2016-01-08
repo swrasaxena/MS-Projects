@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="//code.jquery.com/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+
+        google.load("feeds", "1");
+
+        function initialize() {
+            var feed = new google.feeds.Feed("https://news.google.com/news/feeds?q=Atlanta%20Falcons&output=rss");
+            feed.setNumEntries(10);
+            feed.load(function (result) {
+                if (!result.error) {
+                    var container = $("#feed");
+                    console.log(result.feed.entries);
+                    console.log(result.feed.entries.length);
+                    for (var i = 0; i < result.feed.entries.length; i++) {
+                        var entry = result.feed.entries[i];
+                        var div = document.createElement("div");
+                        div.appendChild(document.createTextNode(entry.title));
+                        container.append(div);
+                    }
+                }
+            });
+        }
+        google.setOnLoadCallback(initialize);
+
+    </script>
+</head>
+<body>
+    <button type="button" onclick="return google.setOnLoadCallback(initialize);">Get</button>
+
+    <div id="feed"></div>
+    <div id="cboxbutton" style="position: fixed; bottom: 8px; right: 16px; width: 200px; padding: 3px; text-align: center; cursor: pointer; background-color: #EDF3F7; border:#C3D7E5 1px solid;border-radius: 3px; font-family: Tahoma, sans-serif; font-size: 14px;" onclick="togglecbox()"><b>Open Cbox</b></div>
+    <div id="cboxdiv" style="display: none; position: fixed; bottom: 48px; right: 16px; width: 200px; background: #EDF3F7; padding: 3px; line-height: 0;border:#C3D7E5 1px solid;border-radius: 3px;"></div>
+
+    <script type="text/javascript">
+        var cbvis = false;
+        var cbload = false;
+        var cbcookie = "cboxvis=";
+
+        function togglecbox() {
+            var cbdiv = document.getElementById("cboxdiv");
+            var cbbut = document.getElementById("cboxbutton");
+
+            if (!cbvis) {
+                if (!cbload) {
+                    cbdiv.innerHTML = '<iframe frameborder="0" width="200" height="305" src="http://www5.cbox.ws/box/?boxid=866084&amp;boxtag=ffw0am&amp;sec=main" marginheight="2" marginwidth="2" scrolling="auto" allowtransparency="yes" name="cboxmain5-866084" style="border:#ababab 1px solid;border-bottom:0px" id="cboxmain5-866084"></iframe><iframe frameborder="0" width="200" height="75" src="http://www5.cbox.ws/box/?boxid=866084&amp;boxtag=ffw0am&amp;sec=form" marginheight="2" marginwidth="2" scrolling="no" allowtransparency="yes" name="cboxform5-866084" style="border:#ababab 1px solid;border-top:0px" id="cboxform5-866084"></iframe>';
+                    cbload = true;
+                }
+                cbdiv.style.display = "block";
+                cbbut.innerHTML = "Close Cbox";
+            }
+            else {
+                cbdiv.style.display = "none";
+                cbbut.innerHTML = "Open Cbox";
+            }
+            cbvis = !cbvis;
+            document.cookie = cbcookie + ((cbvis) ? 1 : 0);
+        }
+        // Toggle Cbox open if it was previously
+        var cbcookiei = document.cookie.indexOf(cbcookie);
+        if (cbcookiei >= 0) {
+            if (document.cookie.substring(cbcookiei + cbcookie.length, cbcookiei + cbcookie.length + 1) === "1") {
+                togglecbox();
+            }
+        }
+    </script>
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+        <input type="hidden" name="cmd" value="_s-xclick" />
+        <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+           " />
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" name="submit" alt="PayPal - The safer, easier way to pay online!" />
+        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+    </form>
+</body>
+</html>

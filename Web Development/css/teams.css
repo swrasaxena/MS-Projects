@@ -1,0 +1,31 @@
+
+@font-face
+{
+    font-family: curve;
+    src: url("../fonts/SFSportsNight.ttf");
+}
+h3
+{
+    font-family: curve;
+    text-align: center;
+    color: midnightblue;
+}
+tr.record
+{
+    color: white;
+}
+
+a.link
+{
+    color: white;
+    text-decoration: none;
+}
+a:hover.link
+{
+    color: yellow;
+    text-decoration: none;
+}
+img
+{
+    margin: 0 auto;
+}

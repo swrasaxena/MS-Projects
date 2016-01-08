@@ -1,0 +1,40 @@
+
+.panel-primary
+{
+    height: 450px;
+    overflow-y:auto;
+}
+
+h3
+{
+    font-family: stylish-curve;
+    text-align:center;
+    font-size: 24px;
+}
+.col-xs-8
+{
+    padding-left:0;
+    padding-right:0;
+}
+.col-xs-3
+{
+    padding-left:0;
+    padding-right:0;
+}
+
+.title
+{
+    color: midnightblue;
+}
+
+.link
+{
+    text-decoration: none;
+    color: green;
+}
+.camera_prev, .camera_next
+{
+    display: none;
+}
+
+

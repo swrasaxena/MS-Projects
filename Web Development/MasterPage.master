@@ -1,0 +1,63 @@
+﻿<%@ Master Language="C#" %>
+
+<!DOCTYPE html>
+
+<script runat="server">
+
+</script>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Football Mania</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css" />
+    <link href="../css/proj-master.css" rel="stylesheet" type="text/css" />
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <meta name="google-translate-customization" content="768a6a75d9d6b329-7928c9f5460fddf5-g85507f9af8a332ca-1f"/>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <link rel="icon" type="image/ico" href="http://images.wikia.com/packers/images/archive/e/e9/20101226155930!Football_icon.png"/>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <div class="navbar navbar-inverse">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="name navbar-brand" href="#">FOOTBALL MANIA</a>
+            </div>
+            <div class="navbar-collapse navbar-responsive-collapse collapse" style="height: 1px;">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="<%= Page.ResolveUrl("~/project/pages/HomePage.aspx")%>" target="_blank">Home</a></li>
+                    <li><a href="<%= Page.ResolveUrl("~/project/pages/Teams.aspx")%>" target="_blank">Teams</a></li>
+                    <li><a href="<%= Page.ResolveUrl("~/project/pages/News.aspx")%>" target="_blank">Football Now</a></li>
+                    <li><a href="<%= Page.ResolveUrl("~/project/pages/Videos.aspx")%>" target="_blank">Videos</a></li>
+                    <li><a href="<%= Page.ResolveUrl("~/Login.aspx")%>" target="_blank">Login</a></li>
+                    <li><a href="<%= Page.ResolveUrl("~/project/pages/feedback.aspx")%>" target="_blank">Feedback</a></li>
+                    <li><a href="<%= Page.ResolveUrl("~/project/pages/Contact.aspx")%>" target="_blank">Contact Us</a></li>
+                    <li><button type="button" class="btn btn-primary" id="google_translate_element"></button></li>
+                </ul>
+            </div>
+        </div>    
+        <br />
+        <asp:ContentPlaceHolder id="body" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        <<nav class="navbar navbar-inverse navbar-static-bottom" role="navigation">
+            <p class="navbar-text">Copyright &copy; Swara Saxena, 2014. All Rights Reserved.</p>
+            
+        </nav>
+    </div>
+        <script src="../javascript/bootstrap.min.js"></script>
+    </form>
+</body>
+</html>

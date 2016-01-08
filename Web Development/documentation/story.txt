@@ -1,0 +1,18 @@
+../../story/whatisnext.htm?../project/documentation/story.txt				Index
+Overview.html																Overview
+MasterPage.html																Master Page
+Home.html																	Home Page
+Teams.html																	Teams Page
+News.html																	Football Now Page
+Videos.html																	Videos Page
+Login.html																	Login Page
+AddCart.html																Add Cart Page
+ViewCart.html																View Cart Page
+feedback.html																Feedback Page
+Contact.html																Contact Us Page
+Experiments.html															Experiments Used
+Design.html																	Database Design
+Browser.html																Browser Compatibility and Images Used
+Future.html																	Future Improvisations
+Acknowledge.html															Acknowledgement
+story.txt																	Story File

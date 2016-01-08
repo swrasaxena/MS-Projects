@@ -1,0 +1,17 @@
+@font-face
+{
+    font-family: curve;
+    src: url("../fonts/Montez-Regular.ttf");
+}
+.text
+{
+    font-family: curve;
+    text-align: justify;
+    color: midnightblue;
+    font-size: 24px;
+}
+h3.panel-title
+{
+    font-family: curve;
+    font-size: 28px;
+}

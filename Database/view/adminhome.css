@@ -1,0 +1,47 @@
+body
+{
+margin: 0px;
+padding: 0px;
+background-image: url('light-violet.jpg');
+font-family: 'Source Sans Pro', sans-serif;
+font-size: 12pt;
+font-weight: 300;
+color: white;
+}
+h2
+{
+color: white;
+font-family: 'Source Sans Pro', sans-serif;
+text-shadow: 5px 5px 5px #FFFF00;
+}
+h3
+{
+color: white;
+text-align: "center";
+}
+#alignment
+{
+  margin-top:10%;
+}
+table, tr, td, th
+{
+margin-top:10%;
+border:2px solid white;
+}
+#pos
+{
+position: absolute;
+top:0%;
+right:3%;
+color: white;
+}
+a
+{
+color: white;
+}
+span
+{
+   display: inline-block;
+   vertical-align: middle;
+   margin-left: 45%;
+}

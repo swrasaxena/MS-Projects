@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>News</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../css/documentation.css" type="text/css" />
+</head>
+<body>
+    <div class="col-xs-12">
+        <div class="col-xs-2">
+        </div>
+        <div class="well well-sm col-xs-8">
+            <h3>Football Now</h3>
+            <br />
+            <div class="align-text">
+                I have used Bootstrap's Tab feature which is very powerful to divide news into 2 sections:
+                <br />
+                <br />
+                1. <u>General News tab</u> - Here I am retrieving data from ESPN's News and Headlines API with headlines, short description, 
+                external link to entire news article and respective images using javascript and jQuery's ajax() function. I am displaying this
+                data in the form of accordion using jQuery UI's accordion which is a very powerful feature.
+                <br />
+                <br />
+                2. <u>NFL Season 2013 Top 2 Team's News tab</u> - 
+                This was the most challenging section where I intended to display each of the 32 team's news by allowing the user to select
+                from a given drop down. I was unable to achieve this as the RSS Feed that I found was google news feed which took team name
+                as the query parameter. This was not getting parsed using simple ASP's XMLDataSource feature. Then I came across Google Feed API
+                which uses google.setOnLoadCallback() function which is a very restrictive function as it gets called automatically on
+                document load. I tried to make do without this function and also on button click call this function but alas! it did not work.
+                Hence I decided to use this to display just one team's news and for the other one I am using XMLDataSource to parse the RSS Feed.
+                The two teams are the top 2 of NFL Season 2013 - 2014 i.e. Seattle Seahawks and Denver Broncos.
+                <br />
+                <br />
+                View Source here <a href="../../fileview/Default.aspx?~/project/pages/News.aspx" target="_blank">Football Now Page</a>
+                <br />
+                <a href="../../fileview/Default.aspx?~/project/javascript/teamNews.js" target="_blank">Javascript File 1</a>
+                <br />
+                <a href="../../fileview/Default.aspx?~/project/javascript/news.js" target="_blank">Javascript File 2</a>
+                <br />
+                <br />
+                <a href="https://developers.google.com/feed/v1/devguide" target="_blank">Google Feed API Reference</a>
+
+            </div>
+        </div>
+        <div class="col-xs-2"></div>
+    </div>
+    <div class="footer">
+        Copyright &copy; Swara Saxena, 2014. All Rights Reserved.
+    </div>
+    <script src="../javascript/bootstrap.min.js"></script>
+
+</body>
+</html>
+

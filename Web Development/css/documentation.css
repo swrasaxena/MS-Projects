@@ -1,0 +1,50 @@
+@font-face
+{
+    font-family: curve;
+    src: url("../fonts/SFSportsNight.ttf");
+}
+html
+{
+    height: 100%;
+    width: 100%;
+}
+h3
+{
+    text-align: center;
+    font-family: curve;
+    color: darkred;
+}
+.well, .well-sm
+{
+    box-shadow: 0 0 30px white;
+    font-family: Georgia;
+    color: midnightblue;
+    margin: 0 auto;
+}
+body
+{
+    background-image: url("../images/backdrop.jpg");
+    max-height: 100%;
+    width: 100%;
+}
+.align-text
+{
+    margin: 0 auto;
+    text-align: justify;
+    font-size: 18px;
+}
+.footer
+{
+    font-family: Georgia;
+    font-size: 16px;
+    margin-left: 37%;
+    color: white;
+}
+.col-xs-12
+{
+    margin-top: 50px;
+}
+.img.img-responsive
+{
+    height: 100px;
+}
